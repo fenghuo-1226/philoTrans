@@ -52,7 +52,7 @@ export const Home: React.FC = () => {
           智能学术助手
         </h2>
         <p className="text-stone-500">
-          支持哲学文本翻译、语音笔记整理、会议纪要生成与灵感润色。
+          支持哲学文本翻译、语音笔记整理与灵感润色。
         </p>
       </div>
 

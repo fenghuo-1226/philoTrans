@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import { Upload, FileText, X, Book, Notebook, Users, Sparkles, ChevronDown, PenTool } from 'lucide-react';
+import { Upload, FileText, X, Book, Notebook, Sparkles, ChevronDown, PenTool } from 'lucide-react';
 import * as pdfjsLib from 'pdfjs-dist';
 import { VoiceRecorder } from './VoiceRecorder';
 import { PromptMode, PROMPT_MODES, TranslationStyle, TRANSLATION_STYLES } from '../types';
@@ -108,7 +108,6 @@ export const InputArea: React.FC<InputAreaProps> = ({ text, setText, onTranslate
     switch (iconName) {
       case 'Book': return <Book size={16} />;
       case 'Notebook': return <Notebook size={16} />;
-      case 'Users': return <Users size={16} />;
       case 'Sparkles': return <Sparkles size={16} />;
       default: return <Book size={16} />;
     }

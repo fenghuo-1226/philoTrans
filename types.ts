@@ -33,12 +33,11 @@ export interface AppSettings {
   siliconFlowToken: string;
 }
 
-export type PromptMode = 'translation' | 'note' | 'meeting' | 'polish';
+export type PromptMode = 'translation' | 'note' | 'polish';
 
 export const PROMPT_MODES: { id: PromptMode; label: string; icon: string }[] = [
   { id: 'translation', label: '哲学深译', icon: 'Book' },
   { id: 'note', label: '学术笔记', icon: 'Notebook' },
-  { id: 'meeting', label: '会议纪要', icon: 'Users' },
   { id: 'polish', label: '灵感润色', icon: 'Sparkles' },
 ];
 

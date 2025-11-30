@@ -31,13 +31,6 @@ const getSystemInstruction = (mode: PromptMode, style: TranslationStyle = 'acade
 2. **关键词提取**：提取笔记中的核心概念、人名或著作作为"术语"。
 3. **摘要总结**：用一段话概括这篇笔记的核心思想作为"语境说明"。
 ${baseSchema}`;
-    
-    case 'meeting':
-      return `你是一位会议记录专员。你的任务是整理会议或对话录音文本。
-1. **纪要整理**：将对话整理为清晰的记录，保留核心观点。
-2. **重点标记**：提取会议中的关键决策、行动项或专有名词作为"术语"。
-3. **会议概览**：总结会议的主题和背景作为"语境说明"。
-${baseSchema}`;
 
     case 'polish':
       return `你是一位专业的文字编辑。你的任务是润色用户的灵感记录。
