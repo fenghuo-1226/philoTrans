@@ -15,6 +15,6 @@ View your app in AI Studio: https://ai.studio/apps/drive/1XHcUOr8HOOVxzD2jZcs7JD
 
 1. Install dependencies:
    `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
+2. Run the app:
    `npm run dev`
+3. Open the app and go to Settings to configure your SiliconFlow API Token (for text translation and voice transcription services)

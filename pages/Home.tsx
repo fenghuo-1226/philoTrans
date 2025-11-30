@@ -30,10 +30,18 @@ export const Home: React.FC = () => {
       setResult(fullResult);
       saveToHistory(fullResult);
       setStatus(TranslationStatus.SUCCESS);
-    } catch (error) {
-      console.error(error);
+    } catch (error: any) {
+      console.error('Translation error:', error);
       setStatus(TranslationStatus.ERROR);
-      alert("处理过程中发生错误。请检查 API 密钥或稍后重试。");
+      
+      let errorMessage = "处理过程中发生错误。";
+      if (error.message) {
+        errorMessage = error.message;
+      } else if (typeof error === 'string') {
+        errorMessage = error;
+      }
+      
+      alert(errorMessage + "\n\n请检查：\n1. 是否已配置 SiliconFlow API Token\n2. API Token 是否有效\n3. 网络连接是否正常");
     }
   };
 

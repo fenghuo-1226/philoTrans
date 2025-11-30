@@ -53,7 +53,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ isOpen, onClose })
               className="w-full p-2.5 rounded-lg border border-stone-200 focus:ring-2 focus:ring-stone-400 focus:border-stone-400 outline-none text-sm font-mono"
             />
             <p className="mt-2 text-xs text-stone-500">
-              用于语音转文本服务。请在 <a href="https://cloud.siliconflow.cn" target="_blank" rel="noreferrer" className="text-blue-600 hover:underline">SiliconFlow</a> 获取 API 密钥。
+              用于文本翻译、语音转文本等服务。使用 DeepSeek-V3.2-Exp 模型。请在 <a href="https://cloud.siliconflow.cn" target="_blank" rel="noreferrer" className="text-blue-600 hover:underline">SiliconFlow</a> 获取 API 密钥。
             </p>
           </div>
         </div>
