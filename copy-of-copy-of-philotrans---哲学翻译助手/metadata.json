@@ -1,0 +1,7 @@
+{
+  "name": "Copy of Copy of PhiloTrans - 哲学翻译助手",
+  "description": "专为哲学文本设计的语境感知翻译工具，提供精确的术语解释和历史背景见解。",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
